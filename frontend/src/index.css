@@ -1,0 +1,209 @@
+html {
+    background-color: #656565;
+}
+
+body {
+    overflow: hidden;
+}
+
+.loader {
+    border: 10px solid white; /* Light grey */
+    border-top: 10px solid black; /* Blue */
+    animation: move 1s infinite linear;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    z-index: 1;
+}
+
+.load {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 1;
+    position: absolute;
+    height: 99%;
+    width: 99%;
+    background-color: #656565;
+}
+
+.mainHomeDiv {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.leftDiv {
+    height: 100%;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.rightDiv {
+    display: flex;
+    float: right;
+    width: 100%;
+    height: 220px;
+    flex-wrap: wrap
+}
+
+.shapka{
+    margin-left: 100px;
+    background-image: url(img/forest.jpg);
+    height: 100%;
+    width: 100%;
+}
+
+.img {
+    position: absolute;
+    height: 220px;
+    width: 200px;
+    clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+}
+
+.header {
+    display: contents;
+}
+
+.test {
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+}
+
+.content {
+    margin-top: 3%;
+}
+
+.forumMainDiv {
+    display: flex;
+}
+
+.forumContent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contentPlate {
+    position: relative;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 400px;
+    width: 30%;
+}
+.contentPlate > div > img {
+    padding: 3px;
+    width: 60%;
+}
+.contentPlate > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contentPlate > .texT {
+    height: 100%;
+    overflow-y: hidden;
+}
+.texT > p {
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+.contentPlate > .show {
+    width: 100%;
+    position: absolute;
+    background-color: #656565c6;
+    bottom: 0cm;
+}
+.texT > h4, .show > h4 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+
+.bottomText {
+    width: 100%;
+    top: 370px;
+    background-color: #656565c4;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+.bottomText > h5 {
+    margin: 12px 0px 12px 0px;
+}
+
+.forumLeftDiv {
+    width: 90%;
+}
+
+.forumRightDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.forumHead {
+    display: flex;
+    justify-content: space-between;
+}
+
+.imgForum {
+    height: 110px;
+    width: 100px;
+    clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+}
+
+.logoSite {
+    height: 110px;
+    width: 150px;
+}
+
+.loginForm, .loginForm > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.loginForm > div > h3 {
+    margin: 10px 0px 10px 0px;
+}
+
+@media(max-width: 1040px) {
+   /* .leftDiv {
+    width: 10%;
+   } */
+}
+@media(max-width: 750px) {
+    /* .leftDiv {
+        width: 15%;
+    } */
+    .rightDiv {
+        height: 140px;
+    }
+    .shapka {
+        margin-left: 60px;
+    }
+    .img {
+        height: 140px;
+        width: 120px;
+    }
+}
+
+.hide {
+    display: none;
+}
+
+@keyframes move {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(180deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+}
